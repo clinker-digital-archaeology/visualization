@@ -9,7 +9,11 @@
 
 - For each visualization, describe and justify: 
     > What software did you use to create your data visualization?
-    For both visualizations, I used Python, specifically Pandas for data manipulation and Matplotlib for plotting. These tools allowed me to clean, aggregate, and visualize the data directly from the CSV file saved from the City of Toronto's Open Data Portal
+    
+    For visualization 1 , I used Python, specifically Plotly Express. Plotly Express allowed me to create an  line chart to show the annual trend of licensed dogs versus cats in Toronto. I used Pandas to clean and aggregate the data from the CSV file downloaded from the City of Toronto’s Open Data Portal.
+
+    For visualization 2, I also used Python, but specifically Pandas for data manipulation and Matplotlib for plotting. These tools allowed me to clean the data, perform aggregations, and produce a static visualization.
+
 
     > Who is your intended audience? 
     The intended audience for these visualizations might include city planners, pet organizations, animal welfare groups, and the general public interested in pet population trends in Toronto. Visualization 1, the annual trend of licensed dogs versus cats, provides insights into the overall number of licenses issued over time for dogs vs cats. Visualization 2, the top 10 dog breeds by year, highlights which dog breeds are most commonly licensed over the last several years which can provide insight into what breeds were most popular each year. 
