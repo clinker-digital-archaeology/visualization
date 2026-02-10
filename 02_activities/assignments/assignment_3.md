@@ -10,7 +10,7 @@
 - For each visualization, describe and justify: 
     > What software did you use to create your data visualization?
     
-    For visualization 1 , I used Python, specifically Plotly Express. Plotly Express allowed me to create an  line chart to show the annual trend of licensed dogs versus cats in Toronto. I used Pandas to clean and aggregate the data from the CSV file downloaded from the City of Toronto’s Open Data Portal.
+    For visualization 1 , I used R, specifically the Plotly R package. Plotly in R allowed me to create an interactive line chart showing the annual trend of licensed dogs versus cats in Toronto. 
 
     For visualization 2, I also used Python, but specifically Pandas for data manipulation and Matplotlib for plotting. These tools allowed me to clean the data, perform aggregations, and produce a static visualization.
 
