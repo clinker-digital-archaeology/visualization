@@ -6,24 +6,71 @@
 - We will finish this class by giving you the chance to use what you have learned in a practical context, by creating data visualizations from raw data. 
 - Choose a dataset of interest from the [City of Toronto’s Open Data Portal](https://www.toronto.ca/city-government/data-research-maps/open-data/) or [Ontario’s Open Data Catalogue](https://data.ontario.ca/). 
 - Using Python and one other data visualization software (Excel or free alternative, Tableau Public, any other tool you prefer), create two distinct visualizations from your dataset of choice.  
+
+## Visualization 1 (created with R)
+![viz-1](./visualization%201%20(recreated%20in%20R).png)
+
+## Visualization 2 (created with python)
+![viz-2](./visualization%202.png)
+
 - For each visualization, describe and justify: 
     > What software did you use to create your data visualization?
+    
+    For visualization 1 , I used R, specifically the Plotly R package. Plotly in R allowed me to create an interactive line chart showing the annual trend of licensed dogs versus cats in Toronto. 
+
+    For visualization 2, I also used Python, but specifically Pandas for data manipulation and Matplotlib for plotting. These tools allowed me to clean the data, perform aggregations, and produce a static visualization.
+
 
     > Who is your intended audience? 
-    
+    The intended audience for these visualizations might include city planners, pet organizations, animal welfare groups, and the general public interested in pet population trends in Toronto. Visualization 1, the annual trend of licensed dogs versus cats, provides insights into the overall number of licenses issued over time for dogs vs cats. Visualization 2, the top 10 dog breeds by year, highlights which dog breeds are most commonly licensed over the last several years which can provide insight into what breeds were most popular each year. 
+
     > What information or message are you trying to convey with your visualization? 
     
+    Visualization 1: Annual Trend of Licensed Dogs vs Cats in Toronto
+    Shows trends in pet licensing, showing whether the number of dogs or cats licensed is increasing, decreasing, or remaining stable over the years. It also allows for comparison between dogs and cats to understand which type of pet is more commonly licensed.
+
+    Visualization 2: Top 10 Dog Breeds by Year
+    Shows breed-specific patterns, showing not only the most popular dog breeds but also the yearly distribution of licenses for each breed. This provides a clear picture of both breed popularity and temporal trends, supporting planning for veterinary services, breeders, and policy initiatives.
+
     > What aspects of design did you consider when making your visualization? How did you apply them? With what elements of your plots? 
     
+    Visualization 1: Annual Trend of Licensed Dogs vs Cats in Toronto
+    I used a line plot to clearly represent trends over multiple years, with distinct colors for dogs and cats to allow immediate differentiation. I included markers for each data point to improve readability and gridlines and axis labels to make the plot easier to interpret. The legend ensures viewers can distinguish between the two animal types.
+
+    Visualization 2: Top 10 Dog Breeds by Year
+    for this visualization, I used a stacked bar chart to show both breed popularity and yearly trends within a single figure. I applied vibrant colors from the tab20 colormap to ensure each year is visually distinct, rotated the x-axis labels to avoid overlap, and positioned the legend outside the chart to maintain clarity. Tight layout adjustments were applied to ensure all labels and plot elements were visible.
+
+
     > How did you ensure that your data visualizations are reproducible? If the tool you used to make your data visualization is not reproducible, how will this impact your data visualization? 
-    
+
+    Both plots are entirely generated from an open access CSV using Python code, meaning anyone with the dataset and notebook can reproduce the figures exactly. The pivot tables and automated plotting ensure that even if the dataset is updated, the same code produces consistent visualizations.
+
     > How did you ensure that your data visualization is accessible?  
-    
+    In Visualization 1, high-contrast colors and clear axis labels ensure the figure is interpretable by colorblind users and screen readers. In Visualization 2, vibrant colors distinguish each year, and axis labels and legend placement improve readability. Rotated x-axis labels and tight layout further enhance accessibility for viewers with visual challenges.
+
+
     > Who are the individuals and communities who might be impacted by your visualization?  
-    
+
+    Visualization 1: Annual Trend of Licensed Dogs vs Cats in Toronto
+    This visualization can provide city officials and planners with information needed to make informed decisions about pet regulations and services, while pet owners gain insight into licensing trends.
+
+    Visualization 2: Top 10 Dog Breeds by Year
+    This one can provide breeders, veterinarians, shelters and policymakers with breed-specific information, allowing them to understand changing trends and anticipate resource needs.
+
     > How did you choose which features of your chosen dataset to include or exclude from your visualization? 
-    
+
+    Visualization 1: Annual Trend of Licensed Dogs vs Cats in Toronto
+    Focused on the Year and ANIMAL_TYPE columns to highlight overall trends, excluding columns such as _id, FSA, and PRIMARY_BREED as they were not relevant to total licensing trends.
+
+    Visualization 2: Top 10 Dog Breeds by Year
+    Included ANIMAL_TYPE, PRIMARY_BREED, and Year to emphasize breed popularity over time, while excluding _id and FSA to simplify the analysis. The top 10 breeds were selected to maintain clarity and prevent overcrowding in the plot.
+
     > What ‘underwater labour’ contributed to your final data visualization product?
+    The “underwater labor” behind these visualizations included some data cleaning, such as standardizing capitalization and removing extra spaces in ANIMAL_TYPE and PRIMARY_BREED. For Visualization 1, yearly counts were aggregated using Pandas groupby, while for Visualization 2, pivot tables were used to calculate counts per breed per year. Additional effort was invested in choosing appropriate colors, adjusting figure size, rotating labels, and formatting legends to maximize clarity, readability, and accessibility.
+
+
+
+
 
 - This assignment is intentionally open-ended - you are free to create static or dynamic data visualizations, maps, or whatever form of data visualization you think best communicates your information to your audience of choice! 
 - Total word count should not exceed **(as a maximum) 1000 words** 
