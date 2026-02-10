@@ -7,6 +7,12 @@
 - Choose a dataset of interest from the [City of Toronto’s Open Data Portal](https://www.toronto.ca/city-government/data-research-maps/open-data/) or [Ontario’s Open Data Catalogue](https://data.ontario.ca/). 
 - Using Python and one other data visualization software (Excel or free alternative, Tableau Public, any other tool you prefer), create two distinct visualizations from your dataset of choice.  
 
+## Visualization 1 (created with R)
+![viz-1](./visualization%201%20(recreated%20in%20R).png)
+
+## Visualization 2 (created with python)
+![viz-2](./visualization%202.png)
+
 - For each visualization, describe and justify: 
     > What software did you use to create your data visualization?
     
